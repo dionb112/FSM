@@ -1,3 +1,5 @@
+//@author Dion Buckley
+
 #include "Idle.h"
 #include <iostream>
 

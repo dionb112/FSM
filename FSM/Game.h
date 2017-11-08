@@ -29,9 +29,9 @@ public:
 
 private:
 	int m_pressed;
-	bool m_anyPressed;
-
+	int m_previousPressed;
 	KeyBoardState m_currentState;
+	KeyBoardState m_previousState;
 	Animation fsm;
 
 	void processEvents();
@@ -39,13 +39,13 @@ private:
 	void render();
 	
 	void setupFontAndText();
-	void setupSprite();
+	void setupSprite(int t_pressed);
 
 	sf::RenderWindow m_window; // main SFML window
 	sf::Font m_ArialBlackfont; // font used by message
 	sf::Text m_welcomeMessage; // text used for message on screen
-	sf::Texture m_logoTexture; // texture used for sfml logo
-	sf::Sprite m_logoSprite; // sprite used for sfml logo
+	sf::Texture m_playerTexture; // texture used for sfml logo
+	sf::Sprite m_playerSprite; // sprite used for sfml logo
 	bool m_exitGame; // control exiting game
 
 };

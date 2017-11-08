@@ -1,3 +1,5 @@
+//@author Dion Buckley
+
 #ifndef STATE
 #define STATE
 #include <iostream>

@@ -3,7 +3,12 @@
 /// 
 /// @author Dion Buckley
 /// @date Oct / Nov 2017
+/// 
+/// Known Bugs: If user tries to hold multiple keys state will shift to newest as appropriate.
+///				However, when releasing newer keys state will not always currectly shift back to previous state
+///				Sometimes it works as expected and sometimes it gets caught up or stuck altogether.
 /// </summary>
+
 
 #ifdef _DEBUG 
 #pragma comment(lib,"sfml-graphics-d.lib") 
